@@ -19,7 +19,7 @@ int main(){
             check=true;
             break;
         }
-        else if(arr[m]<target){
+        else if(arr[m]>target){
             l=m+1;
         }
         else{
