@@ -24,5 +24,7 @@
         //let me asume that if i want to declare in normal type of class so i need to make defult constructor
         student s2;
         s2.batch=2002;
+        s2.reg_no=20;
         cout<<s2.batch;
+        cout<<s2.reg_no;
  }
