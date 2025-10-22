@@ -1,3 +1,4 @@
+//first target element occurance in a array using binary search
 #include<iostream>
 using namespace std;
 int main(){
