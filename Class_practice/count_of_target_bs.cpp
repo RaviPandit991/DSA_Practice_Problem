@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+    //count of target element occurance in a array by using binary sort
     int found;
     int last;
     int target =2;
