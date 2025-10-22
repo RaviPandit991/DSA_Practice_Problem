@@ -2,6 +2,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+    //last target element occurance in a array using binary search
     int found;
     int target =2;
     int arr[9]={1,1,2,2,3,3,4,5,6};
