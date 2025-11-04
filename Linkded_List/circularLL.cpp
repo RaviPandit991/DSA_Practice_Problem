@@ -36,6 +36,15 @@ void insertLLhead(Node* &head){
     q->next=newNode;
     head=newNode;
 }
+void find_loop(Node* head){
+    Node* p = head;
+    int count = 0;
+    while(p->next!=head ){
+        count++;
+        p=p->next;
+    }
+    cout<<count;
+}
 int main(){
     Node* head = new Node(12);
     head->next = new Node(15);
@@ -43,6 +52,7 @@ int main(){
     head->next->next->next = new Node(17); 
     head->next->next->next->next = new Node(21); 
     printcircular(head);
-    insertLLhead(head);
-    printll(head);
+    // insertLLhead(head);
+    find_loop(head);
+    // printll(head);
 }
