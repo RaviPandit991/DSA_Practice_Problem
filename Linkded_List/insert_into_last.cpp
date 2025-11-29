@@ -32,7 +32,7 @@ int main(){
     head->next = new Node(3);
     head->next->next = new Node(5);
     head->next->next->next= new Node(7);
-    int val=9,pos=3;
+    int val=9,pos=5;
     Node* p = head;
     insert_into_last(&head,pos,val);
     display(head);
