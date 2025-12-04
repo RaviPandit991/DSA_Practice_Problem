@@ -22,6 +22,17 @@ class child : public parent{
         cout<<"Child class distructor called"<<endl;
     }
 };
+
+class child2 : public child{
+    public:
+    child2(){
+        cout<<"Child2 class constructor called"<<endl;
+    }
+
+    ~child2(){
+        cout<<"Child2 class distructor called"<<endl;
+    }
+};
 int main(){
-    child c;
+    child2 c;
 }
