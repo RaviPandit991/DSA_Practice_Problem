@@ -1,0 +1,11 @@
+*.exe
+Class_practice/hello.cpp
+Array/Basic_question.cpp
+Array/ccc.cpp
+Array/memory_allocation.cpp
+Array/tempCodeRunnerFile.cpp
+Array/vectorbasic.cpp
+Class_practice/enum.cpp
+Array/synatax_and_Declaration.cpp
+*.json
+*.txt
