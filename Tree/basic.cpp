@@ -28,7 +28,7 @@ int main(){
     root->left = leftNode;
     root->right = rightNode;
     root->left->left = leftNode1;
-    root->right->right = rightNode1;
+    root->left->right = rightNode1;
     print(root);
 }
 
