@@ -11,6 +11,14 @@ struct Node{
         right = nullptr;
     }
 };
+ void print(Node* root){
+     if(root == NULL){
+         return;
+     }
+     cout<<root->data<<" ";
+     print(root->left);
+     print(root->right);
+ }
 int main(){
     Node* root = new Node(1);
     Node* leftNode = new Node(2);
@@ -21,6 +29,7 @@ int main(){
     root->right = rightNode;
     root->left->left = leftNode1;
     root->right->right = rightNode1;
+    print(root);
 }
 
 
@@ -29,6 +38,7 @@ int main(){
 //     if(root == NULL){
 //         return;
 //     }
+//     cout<<root->data;
 //     print(root->left);
 //     print(root->right);
 // }
