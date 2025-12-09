@@ -11,14 +11,14 @@ struct Node{
         right = nullptr;
     }
 };
- void preorder(Node* root){
-     if(root == NULL){
-         return;
-     }
-     cout<<root->data<<" ";
-     preorder(root->left);
-     preorder(root->right);
- }
+ int preorder(Node* root, int sum){
+     if(root == NULL)return;
+     //cout<<root->data<<" ";
+     sum+=root->data;
+     preorder(root->left,sum);
+     preorder(root->right,sum);
+     return sum
+    }
 int main(){
     Node* root = new Node(1);
     Node* leftNode = new Node(2);
@@ -29,5 +29,7 @@ int main(){
     root->right = rightNode;
     root->left->left = leftNode1;
     root->left->right = rightNode1;
-    preorder(root);
+    int sum=0;
+    int n = preorder(root,sum);
+    cout<<n;
 }
