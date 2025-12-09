@@ -11,7 +11,7 @@ struct Node{
         right = nullptr;
     }
 };
- void inorder(Node* root){
+ void inorder(Node* root){  
      if(root == NULL){
          return;
      }
