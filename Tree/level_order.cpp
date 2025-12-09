@@ -23,10 +23,10 @@ void levelorder1(Node* root){
             Node* node = q.front();
             q.pop();
             sum+=node->data;
-        if(!node->left)q.push(node->left);
-        if(!node->right)q.push(node->right);    
+        if(node->left!=nullptr)q.push(node->left);
+        if(node->right!=nullptr)q.push(node->right);    
         }
-        cout<<"The sum of level : "<<sum;
+        cout<<"The sum of level : "<<sum<<endl;
     }
 }
 //method 2 for level_order for simple purpose;
@@ -37,8 +37,8 @@ void levelorder2(Node* root){
         Node* node = q.front();
         q.pop();
         cout<<node->data<<" ";
-        if(!node->left)q.push(node->left);
-        if(!node->right)q.push(node->right);
+        if(node->left!=nullptr)q.push(node->left);
+        if(node->right!=nullptr)q.push(node->right);
     }
 }
 int main(){
@@ -52,4 +52,5 @@ int main(){
     root->left->left = leftNode1;
     root->left->right = rightNode1;
     levelorder1(root);
+    levelorder2(root);
 }
