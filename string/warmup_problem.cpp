@@ -6,6 +6,9 @@ int main(){
     int count =0;
     int n = str.length();
     for(int i=0;i<n;i++){
+        if(n==1){
+            break;
+        }
         if(i==0){
             if(str[i]!=str[i+1]){
                 count++;
