@@ -14,5 +14,5 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<display(arr,n,0);
+    cout<<4display(arr,n,0);
 }
