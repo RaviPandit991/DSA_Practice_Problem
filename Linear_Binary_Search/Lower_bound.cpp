@@ -38,7 +38,6 @@ int Lower_bound(int arr[], int n, int target) {
     int hi = n - 1;
 
     while(lo <= hi) {
-        if(lo==hi) break;
         int mid = (lo + hi) / 2;
         if(arr[mid] < target) {
             lo = mid + 1;
